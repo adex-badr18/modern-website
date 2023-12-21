@@ -1,11 +1,21 @@
 import './App.css';
 
+import { Navbar, Header, Features, Download, Subscribe, Faq, Footer } from './components';
+
 function App() {
 
     return (
-        <div>
-            
-        </div>
+        <main>
+            <header className='header-bg'>
+                <Navbar />
+                <Header />
+            </header>
+            <Features />
+            <Download />
+            <Subscribe />
+            <Faq />
+            <Footer />
+        </main>
     )
 }
 
