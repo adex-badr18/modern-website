@@ -1,4 +1,4 @@
-import phone from '/images/phone-header-bg.png';
+import phoneHeader from '/images/phone-header-bg.png';
 import './Header.css';
 import Button from '../UI/button/Button';
 import '../UI/button/Button.css';
@@ -14,7 +14,7 @@ const Header = () => {
                         <span>Messaging System</span>
                     </h1>
 
-                    <p>
+                    <p className='u-text-small u-text-light'>
                     SocialX is a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
 
@@ -24,7 +24,9 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className="header-right"></div>
+                <div className="header-right">
+                    <img src={phoneHeader} alt="Phone" />
+                </div>
             </div>
         </section>
     )

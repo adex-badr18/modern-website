@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 8em;
+    height: 8rem;
 }
 
 .logo {
@@ -27,7 +27,7 @@
 }
 
 .nav-links li {
-    margin-left: 1em;
+    margin-left: 1rem;
     list-style: none;
 }
 
@@ -61,7 +61,7 @@
         display: block;
         position: absolute;
         left: 0;
-        top: 8em;
+        top: 8rem;
         width: 100%;
         background-color: var(--dark-blue);
         border: 2px solid var(--color-white);
@@ -101,9 +101,9 @@
     .navbar #nav-links-mobile li,
     .navbar #nav-links-mobile-hide li {
         text-align: center;
-        padding: 1em 0;
+        padding: 1rem 0;
         border-bottom: 1px solid #FFFFFF;
-        margin: 0 3em;
+        margin: 0 3rem;
     }
 
     .navbar #nav-links-mobile li:last-child,
