@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { SiAnaconda } from "react-icons/si";
 import { AiOutlineBars } from "react-icons/ai";
 import { RiCloseLine } from "react-icons/ri";
+import Button from '../UI/button/Button';
+import '../UI/button/Button.css';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -26,14 +28,17 @@ const Navbar = () => {
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Download</a></li>
                     <li><a href="#">Subscribe</a></li>
-                    <li className='nav-btn'><a href="#" className='btn btn-dark'>Get Started</a></li>
+                    <li className='nav-btn'>
+                        {/* <a href="#" className='btn btn-dark'>Get Started</a> */}
+                        <Button text='Get Started' btnClass='btn-dark' href='#faq' />
+                    </li>
                 </ul>
             </menu>
 
             <div className="menu-icons" onClick={toggleMenu}>
                 {
-                    showMenu ? 
-                    <RiCloseLine color='#FFFFFF' size={30} /> : <AiOutlineBars color='#FFFFFF' size={30} />
+                    showMenu ?
+                        <RiCloseLine color='#FFFFFF' size={30} /> : <AiOutlineBars color='#FFFFFF' size={30} />
                 }
             </div>
         </nav>
