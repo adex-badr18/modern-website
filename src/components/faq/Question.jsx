@@ -10,7 +10,7 @@ const Question = ({title, answer}) => {
     }
 
     return (
-        <div className='container question'>
+        <div className='question'>
             <div className="question-title">
                 <h4>{title}</h4>
                 <button className="question-icon" onClick={handleClick}>
