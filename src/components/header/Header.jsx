@@ -3,12 +3,22 @@ import './Header.css';
 import Button from '../UI/button/Button';
 import '../UI/button/Button.css';
 import { BsMouse } from "react-icons/bs";
+import { useEffect } from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Header = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1500,
+        });
+    }, []);
+
     return (
         <section id="header">
             <div className="container header">
-                <div className="header-left">
+                <div className="header-left" data-aos='fade-right'>
                     <h1>
                         <span>The World's Leading</span>
                         <span>Cross-platform Secure</span>
@@ -16,7 +26,7 @@ const Header = () => {
                     </h1>
 
                     <p className='u-text-small u-text-light'>
-                    SocialX is a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        SocialX is a Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
 
                     <div className="header-cta">
@@ -25,7 +35,7 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className="header-right">
+                <div className="header-right" data-aos='fade-left'>
                     <img src={phoneHeader} alt="Phone" />
                 </div>
             </div>

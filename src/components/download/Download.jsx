@@ -3,10 +3,21 @@ import { GrAndroid } from "react-icons/gr";
 import { IconContext } from "react-icons";
 import './Download.css';
 
+import { useEffect } from "react";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Download = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1500,
+        });
+    }, []);
+
     return (
         <section id="download">
-            <div className="container download">
+            <div className="container download" data-aos='zoom-in-right'>
                 <h2>SOCIALX MESSENGER DOWNLOAD</h2>
                 <p className="u-text-small u-text-light">
                     Our apps are available for download on all stores.
