@@ -5,8 +5,8 @@ import { questions } from './data';
 
 const Faq = () => {
     return (
-        <section id="faqs">
-            <div className="container faqs">
+        <section id="faq">
+            <div className="container faq">
                 <div className="u-title">
                     <MdOutlineLibraryBooks color="orangered" size={30} />
                     <h2>FAQS</h2>
